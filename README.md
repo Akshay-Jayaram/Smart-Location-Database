@@ -7,6 +7,7 @@
 4. [Literature Survey](#4-literature-survey)
 5. [Overview](#5-overview)
 6. [Evaluation](#6-evaluation)
+7. [Results] (#7-results)
 
 ---
 
@@ -60,3 +61,32 @@ Evaluation of the project will involve:
 - Accuracy assessment using metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared.
 - Scalability testing by increasing dataset size and monitoring system performance.
 - Usability evaluation through user surveys measuring task completion rate, error rate, and user satisfaction scores.
+Certainly, here's the updated results section with the requested images:
+
+### 7 RESULTS
+
+The results showcase the following aspects:
+
+#### Relationship between Street Network Density and Intersection Density:
+A scatter plot using Seaborn (`sns.scatterplot()`) to visualize the relationship between two variables (`D3A` and `D3B`).
+![Scatter Plot](images/scatterPlotImage.png)
+
+#### Visualization of Geodatabase Data:
+Reading geospatial data from a Geodatabase, creating a basic visualization of the data using GeoPandas.
+![Geodatabase Visualization](images/geodatabase_visualization_image.png)
+
+#### Vehicle Miles Traveled per Worker:
+A choropleth map where different colors represent varying values of vehicle miles traveled per worker across geographical areas specified by the GeoDataFrame `gdf`.
+![Vehicle Miles Traveled per Worker Choropleth Map](images/vehicle_miles_traveled_map_image.png)
+
+#### Average Annual GHG Emissions:
+Comparing the average annual GHG emissions across different `CSAName` regions, providing insights into the distribution or variation of emissions in those areas.
+![Average Annual GHG Emissions](images/ghg_emissions_image.png)
+
+#### Choropleth Visualization:
+A choropleth map with colors representing the `AnnualGHG` column’s values, grouped into intervals of equal size. It visualizes the spatial distribution of greenhouse gas emissions across different regions in the dataset, helping to identify areas with varying levels of emissions.
+![Choropleth Visualization](images/choropleth_annual_GHG.png)
+
+#### Bivariate Choropleth Map:
+Visualizing the combined effect of both `AnnualGHG` and `SLCscore` columns by assigning a categorical color scheme based on their respective quantiles, providing insights into the relationship between these variables across geographical regions.
+![Bivariate Choropleth Map](images/bivariate_choropleth_image.png)
